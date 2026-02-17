@@ -48,6 +48,6 @@ jobs:
 
       - name: Create and Push Merged Image
         run: |
-          docker buildx imagetools create -t brighterly/ssh-client:${{ matrix.version }} \
+          docker buildx imagetools create -t brighterly/ssh-client:latest \
             brighterly/ssh-client:latest-amd64 \
             brighterly/ssh-client:latest-arm64
